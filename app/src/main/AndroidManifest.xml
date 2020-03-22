@@ -19,6 +19,59 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".firebaseui.ChooserActivity" />
+        <activity
+            android:name=".firebaseui.CustomAuthActivity"
+            android:label="@string/label_custom_auth" />
+        <activity
+            android:name=".firebaseui.GoogleSignInActivity"
+            android:label="@string/label_google_sign_in" />
+        <activity
+            android:name=".firebaseui.FacebookLoginActivity"
+            android:label="@string/label_facebook_login" />
+        <activity
+            android:name=".firebaseui.EmailPasswordActivity"
+            android:label="@string/label_emailpassword"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".firebaseui.PasswordlessActivity"
+            android:label="@string/label_passwordless"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <data
+                    android:host="your-project-id.firebaseapp.com"
+                    android:scheme="https" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".firebaseui.PhoneAuthActivity"
+            android:label="@string/label_phone_auth"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".firebaseui.AnonymousAuthActivity"
+            android:label="@string/label_anonymous_auth" />
+        <activity
+            android:name=".firebaseui.FirebaseUIActivity"
+            android:label="@string/label_firebase_ui" />
+        <activity
+            android:name=".firebaseui.GenericIdpActivity"
+            android:label="@string/label_generic_idp" />
+        <activity
+            android:name=".firebaseui.MultiFactorActivity"
+            android:label="@string/label_multi_factor" />
+        <activity
+            android:name=".firebaseui.MultiFactorEnrollActivity"
+            android:label="MultiFactor Sign-In" />
+        <activity
+            android:name=".firebaseui.MultiFactorSignInActivity"
+            android:label="MultiFactor Sign-In" />
+        <activity
+            android:name=".firebaseui.MultiFactorUnenrollActivity"
+            android:label="MultiFactor Unenroll" />
     </application>
 
 </manifest>
